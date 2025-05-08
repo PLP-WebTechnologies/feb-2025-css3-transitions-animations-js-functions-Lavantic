@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Theme Switcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle">🌓</button>
+    <div class="notification" id="notification">Preference saved!</div>
+    
+    <div class="container">
+        <header>
+            <h1>Interactive Theme Switcher</h1>
+            <p>Demonstrating CSS animations, transitions and localStorage</p>
+        </header>
+        
+        <div class="cards-container">
+            <div class="card">
+                <h3>CSS Transitions</h3>
+                <p>Smooth transitions between states create a polished user experience.</p>
+            </div>
+            <div class="card">
+                <h3>CSS Animations</h3>
+                <p>Keyframe animations add dynamic visual effects to elements.</p>
+            </div>
+            <div class="card">
+                <h3>JavaScript Functions</h3>
+                <p>Functions handle user interactions and dynamic behavior.</p>
+            </div>
+            <div class="card">
+                <h3>LocalStorage</h3>
+                <p>Store user preferences that persist between browser sessions.</p>
+            </div>
+        </div>
+        
+        <div>
+            <h2>Try These Buttons</h2>
+            <button class="button" id="animateButton">Animate Me</button>
+            <button class="button" id="resetButton">Reset Animation</button>
+            <button class="button" id="clearStorage">Clear Preferences</button>
+        </div>
+        
+        <div style="margin-top: 30px;">
+            <h2>Color Preferences</h2>
+            <div>
+                <label for="primaryColor">Primary Color:</label>
+                <input type="color" id="primaryColor" value="#3498db">
+            </div>
+            <div style="margin-top: 10px;">
+                <label for="secondaryColor">Secondary Color:</label>
+                <input type="color" id="secondaryColor" value="#2ecc71">
+            </div>
+            <button class="button" id="saveColors" style="margin-top: 10px;">Save Colors</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
